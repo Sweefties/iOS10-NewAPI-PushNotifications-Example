@@ -4,6 +4,16 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>PushNotificationContentExtension.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>PushNotificationServiceExtension.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
 		<key>iOS10-NewAPI-PushNotifications-Example.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -13,6 +23,16 @@
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>7EAF2E6A1D96B80F00F322ED</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>7EAF2E941D96E37900F322ED</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>7EAF2EAC1D96E61200F322ED</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -8,24 +8,97 @@
 
 /* Begin PBXBuildFile section */
 		7EAF2E6F1D96B80F00F322ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EAF2E6E1D96B80F00F322ED /* AppDelegate.swift */; };
-		7EAF2E711D96B80F00F322ED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EAF2E701D96B80F00F322ED /* ViewController.swift */; };
 		7EAF2E741D96B80F00F322ED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EAF2E721D96B80F00F322ED /* Main.storyboard */; };
 		7EAF2E761D96B80F00F322ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7EAF2E751D96B80F00F322ED /* Assets.xcassets */; };
 		7EAF2E791D96B80F00F322ED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EAF2E771D96B80F00F322ED /* LaunchScreen.storyboard */; };
+		7EAF2E861D96D54000F322ED /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EAF2E851D96D54000F322ED /* MainVC.swift */; };
+		7EAF2E891D96D5C200F322ED /* DefaultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EAF2E871D96D5C200F322ED /* DefaultCell.swift */; };
+		7EAF2E8A1D96D5C200F322ED /* DefaultCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7EAF2E881D96D5C200F322ED /* DefaultCell.xib */; };
+		7EAF2E8E1D96D6A300F322ED /* UNContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EAF2E8D1D96D6A300F322ED /* UNContent.swift */; };
+		7EAF2E901D96DD5700F322ED /* UNIdentifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EAF2E8F1D96DD5700F322ED /* UNIdentifiers.swift */; };
+		7EAF2E981D96E37900F322ED /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EAF2E971D96E37900F322ED /* UserNotifications.framework */; };
+		7EAF2E9A1D96E37900F322ED /* UserNotificationsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EAF2E991D96E37900F322ED /* UserNotificationsUI.framework */; };
+		7EAF2E9D1D96E37900F322ED /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EAF2E9C1D96E37900F322ED /* NotificationViewController.swift */; };
+		7EAF2EA01D96E37900F322ED /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EAF2E9E1D96E37900F322ED /* MainInterface.storyboard */; };
+		7EAF2EA41D96E37900F322ED /* PushNotificationContentExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 7EAF2E951D96E37900F322ED /* PushNotificationContentExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		7EAF2EB01D96E61200F322ED /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EAF2EAF1D96E61200F322ED /* NotificationService.swift */; };
+		7EAF2EB41D96E61200F322ED /* PushNotificationServiceExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 7EAF2EAD1D96E61200F322ED /* PushNotificationServiceExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7EAF2EA21D96E37900F322ED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7EAF2E631D96B80F00F322ED /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7EAF2E941D96E37900F322ED;
+			remoteInfo = PushNotificationContentExtension;
+		};
+		7EAF2EB21D96E61200F322ED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7EAF2E631D96B80F00F322ED /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7EAF2EAC1D96E61200F322ED;
+			remoteInfo = PushNotificationServiceExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		7EAF2EA81D96E37900F322ED /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				7EAF2EA41D96E37900F322ED /* PushNotificationContentExtension.appex in Embed App Extensions */,
+				7EAF2EB41D96E61200F322ED /* PushNotificationServiceExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		7EAF2E6B1D96B80F00F322ED /* iOS10-NewAPI-PushNotifications-Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS10-NewAPI-PushNotifications-Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EAF2E6E1D96B80F00F322ED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7EAF2E701D96B80F00F322ED /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		7EAF2E731D96B80F00F322ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7EAF2E751D96B80F00F322ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7EAF2E781D96B80F00F322ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7EAF2E7A1D96B80F00F322ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7EAF2E841D96C8FD00F322ED /* iOS10-NewAPI-PushNotifications-Example.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "iOS10-NewAPI-PushNotifications-Example.entitlements"; sourceTree = "<group>"; };
+		7EAF2E851D96D54000F322ED /* MainVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainVC.swift; path = App/Controllers/MainVC.swift; sourceTree = "<group>"; };
+		7EAF2E871D96D5C200F322ED /* DefaultCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DefaultCell.swift; path = App/Views/DefaultCell.swift; sourceTree = "<group>"; };
+		7EAF2E881D96D5C200F322ED /* DefaultCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DefaultCell.xib; path = App/Views/DefaultCell.xib; sourceTree = "<group>"; };
+		7EAF2E8D1D96D6A300F322ED /* UNContent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UNContent.swift; path = App/Models/UNContent.swift; sourceTree = "<group>"; };
+		7EAF2E8F1D96DD5700F322ED /* UNIdentifiers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UNIdentifiers.swift; path = App/Models/UNIdentifiers.swift; sourceTree = "<group>"; };
+		7EAF2E951D96E37900F322ED /* PushNotificationContentExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = PushNotificationContentExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		7EAF2E971D96E37900F322ED /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
+		7EAF2E991D96E37900F322ED /* UserNotificationsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotificationsUI.framework; path = System/Library/Frameworks/UserNotificationsUI.framework; sourceTree = SDKROOT; };
+		7EAF2E9C1D96E37900F322ED /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
+		7EAF2E9F1D96E37900F322ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		7EAF2EA11D96E37900F322ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7EAF2EAD1D96E61200F322ED /* PushNotificationServiceExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = PushNotificationServiceExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		7EAF2EAF1D96E61200F322ED /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		7EAF2EB11D96E61200F322ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		7EAF2E681D96B80F00F322ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7EAF2E921D96E37900F322ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7EAF2E9A1D96E37900F322ED /* UserNotificationsUI.framework in Frameworks */,
+				7EAF2E981D96E37900F322ED /* UserNotifications.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7EAF2EAA1D96E61200F322ED /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -39,6 +112,9 @@
 			isa = PBXGroup;
 			children = (
 				7EAF2E6D1D96B80F00F322ED /* iOS10-NewAPI-PushNotifications-Example */,
+				7EAF2E9B1D96E37900F322ED /* PushNotificationContentExtension */,
+				7EAF2EAE1D96E61200F322ED /* PushNotificationServiceExtension */,
+				7EAF2E961D96E37900F322ED /* Frameworks */,
 				7EAF2E6C1D96B80F00F322ED /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,6 +123,8 @@
 			isa = PBXGroup;
 			children = (
 				7EAF2E6B1D96B80F00F322ED /* iOS10-NewAPI-PushNotifications-Example.app */,
+				7EAF2E951D96E37900F322ED /* PushNotificationContentExtension.appex */,
+				7EAF2EAD1D96E61200F322ED /* PushNotificationServiceExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -54,14 +132,95 @@
 		7EAF2E6D1D96B80F00F322ED /* iOS10-NewAPI-PushNotifications-Example */ = {
 			isa = PBXGroup;
 			children = (
+				7EAF2E841D96C8FD00F322ED /* iOS10-NewAPI-PushNotifications-Example.entitlements */,
+				7EAF2E801D96B81A00F322ED /* App */,
+			);
+			path = "iOS10-NewAPI-PushNotifications-Example";
+			sourceTree = "<group>";
+		};
+		7EAF2E801D96B81A00F322ED /* App */ = {
+			isa = PBXGroup;
+			children = (
+				7EAF2E8C1D96D68300F322ED /* Models */,
+				7EAF2E8B1D96D5CF00F322ED /* Views */,
+				7EAF2E811D96B82200F322ED /* Root */,
+				7EAF2E821D96B82700F322ED /* Controllers */,
+				7EAF2E831D96B83300F322ED /* Ressources */,
+			);
+			name = App;
+			sourceTree = "<group>";
+		};
+		7EAF2E811D96B82200F322ED /* Root */ = {
+			isa = PBXGroup;
+			children = (
 				7EAF2E6E1D96B80F00F322ED /* AppDelegate.swift */,
-				7EAF2E701D96B80F00F322ED /* ViewController.swift */,
+			);
+			name = Root;
+			sourceTree = "<group>";
+		};
+		7EAF2E821D96B82700F322ED /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				7EAF2E851D96D54000F322ED /* MainVC.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		7EAF2E831D96B83300F322ED /* Ressources */ = {
+			isa = PBXGroup;
+			children = (
 				7EAF2E721D96B80F00F322ED /* Main.storyboard */,
 				7EAF2E751D96B80F00F322ED /* Assets.xcassets */,
 				7EAF2E771D96B80F00F322ED /* LaunchScreen.storyboard */,
 				7EAF2E7A1D96B80F00F322ED /* Info.plist */,
 			);
-			path = "iOS10-NewAPI-PushNotifications-Example";
+			name = Ressources;
+			sourceTree = "<group>";
+		};
+		7EAF2E8B1D96D5CF00F322ED /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7EAF2E871D96D5C200F322ED /* DefaultCell.swift */,
+				7EAF2E881D96D5C200F322ED /* DefaultCell.xib */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		7EAF2E8C1D96D68300F322ED /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7EAF2E8D1D96D6A300F322ED /* UNContent.swift */,
+				7EAF2E8F1D96DD5700F322ED /* UNIdentifiers.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		7EAF2E961D96E37900F322ED /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7EAF2E971D96E37900F322ED /* UserNotifications.framework */,
+				7EAF2E991D96E37900F322ED /* UserNotificationsUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7EAF2E9B1D96E37900F322ED /* PushNotificationContentExtension */ = {
+			isa = PBXGroup;
+			children = (
+				7EAF2E9C1D96E37900F322ED /* NotificationViewController.swift */,
+				7EAF2E9E1D96E37900F322ED /* MainInterface.storyboard */,
+				7EAF2EA11D96E37900F322ED /* Info.plist */,
+			);
+			path = PushNotificationContentExtension;
+			sourceTree = "<group>";
+		};
+		7EAF2EAE1D96E61200F322ED /* PushNotificationServiceExtension */ = {
+			isa = PBXGroup;
+			children = (
+				7EAF2EAF1D96E61200F322ED /* NotificationService.swift */,
+				7EAF2EB11D96E61200F322ED /* Info.plist */,
+			);
+			path = PushNotificationServiceExtension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,15 +233,52 @@
 				7EAF2E671D96B80F00F322ED /* Sources */,
 				7EAF2E681D96B80F00F322ED /* Frameworks */,
 				7EAF2E691D96B80F00F322ED /* Resources */,
+				7EAF2EA81D96E37900F322ED /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				7EAF2EA31D96E37900F322ED /* PBXTargetDependency */,
+				7EAF2EB31D96E61200F322ED /* PBXTargetDependency */,
 			);
 			name = "iOS10-NewAPI-PushNotifications-Example";
 			productName = "iOS10-NewAPI-PushNotifications-Example";
 			productReference = 7EAF2E6B1D96B80F00F322ED /* iOS10-NewAPI-PushNotifications-Example.app */;
 			productType = "com.apple.product-type.application";
+		};
+		7EAF2E941D96E37900F322ED /* PushNotificationContentExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7EAF2EA51D96E37900F322ED /* Build configuration list for PBXNativeTarget "PushNotificationContentExtension" */;
+			buildPhases = (
+				7EAF2E911D96E37900F322ED /* Sources */,
+				7EAF2E921D96E37900F322ED /* Frameworks */,
+				7EAF2E931D96E37900F322ED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PushNotificationContentExtension;
+			productName = PushNotificationContentExtension;
+			productReference = 7EAF2E951D96E37900F322ED /* PushNotificationContentExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		7EAF2EAC1D96E61200F322ED /* PushNotificationServiceExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7EAF2EB51D96E61200F322ED /* Build configuration list for PBXNativeTarget "PushNotificationServiceExtension" */;
+			buildPhases = (
+				7EAF2EA91D96E61200F322ED /* Sources */,
+				7EAF2EAA1D96E61200F322ED /* Frameworks */,
+				7EAF2EAB1D96E61200F322ED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PushNotificationServiceExtension;
+			productName = PushNotificationServiceExtension;
+			productReference = 7EAF2EAD1D96E61200F322ED /* PushNotificationServiceExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -95,6 +291,22 @@
 				ORGANIZATIONNAME = Sweefties;
 				TargetAttributes = {
 					7EAF2E6A1D96B80F00F322ED = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
+					};
+					7EAF2E941D96E37900F322ED = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+					};
+					7EAF2EAC1D96E61200F322ED = {
 						CreatedOnToolsVersion = 8.0;
 						ProvisioningStyle = Automatic;
 					};
@@ -114,6 +326,8 @@
 			projectRoot = "";
 			targets = (
 				7EAF2E6A1D96B80F00F322ED /* iOS10-NewAPI-PushNotifications-Example */,
+				7EAF2E941D96E37900F322ED /* PushNotificationContentExtension */,
+				7EAF2EAC1D96E61200F322ED /* PushNotificationServiceExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -124,8 +338,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				7EAF2E791D96B80F00F322ED /* LaunchScreen.storyboard in Resources */,
+				7EAF2E8A1D96D5C200F322ED /* DefaultCell.xib in Resources */,
 				7EAF2E761D96B80F00F322ED /* Assets.xcassets in Resources */,
 				7EAF2E741D96B80F00F322ED /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7EAF2E931D96E37900F322ED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7EAF2EA01D96E37900F322ED /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7EAF2EAB1D96E61200F322ED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,12 +366,44 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7EAF2E711D96B80F00F322ED /* ViewController.swift in Sources */,
+				7EAF2E8E1D96D6A300F322ED /* UNContent.swift in Sources */,
+				7EAF2E861D96D54000F322ED /* MainVC.swift in Sources */,
+				7EAF2E891D96D5C200F322ED /* DefaultCell.swift in Sources */,
 				7EAF2E6F1D96B80F00F322ED /* AppDelegate.swift in Sources */,
+				7EAF2E901D96DD5700F322ED /* UNIdentifiers.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7EAF2E911D96E37900F322ED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7EAF2E9D1D96E37900F322ED /* NotificationViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7EAF2EA91D96E61200F322ED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7EAF2EB01D96E61200F322ED /* NotificationService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7EAF2EA31D96E37900F322ED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7EAF2E941D96E37900F322ED /* PushNotificationContentExtension */;
+			targetProxy = 7EAF2EA21D96E37900F322ED /* PBXContainerItemProxy */;
+		};
+		7EAF2EB31D96E61200F322ED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7EAF2EAC1D96E61200F322ED /* PushNotificationServiceExtension */;
+			targetProxy = 7EAF2EB21D96E61200F322ED /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		7EAF2E721D96B80F00F322ED /* Main.storyboard */ = {
@@ -158,6 +420,14 @@
 				7EAF2E781D96B80F00F322ED /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		7EAF2E9E1D96E37900F322ED /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7EAF2E9F1D96E37900F322ED /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -259,7 +529,10 @@
 		7EAF2E7E1D96B80F00F322ED /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "iOS10-NewAPI-PushNotifications-Example/iOS10-NewAPI-PushNotifications-Example.entitlements";
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "iOS10-NewAPI-PushNotifications-Example/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sweefties.iOS10-NewAPI-PushNotifications-Example";
@@ -271,11 +544,66 @@
 		7EAF2E7F1D96B80F00F322ED /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "iOS10-NewAPI-PushNotifications-Example/iOS10-NewAPI-PushNotifications-Example.entitlements";
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "iOS10-NewAPI-PushNotifications-Example/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sweefties.iOS10-NewAPI-PushNotifications-Example";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		7EAF2EA61D96E37900F322ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = PushNotificationContentExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sweefties.iOS10-NewAPI-PushNotifications-Example.PushNotificationContentExtension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		7EAF2EA71D96E37900F322ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = PushNotificationContentExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sweefties.iOS10-NewAPI-PushNotifications-Example.PushNotificationContentExtension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		7EAF2EB61D96E61200F322ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = PushNotificationServiceExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sweefties.iOS10-NewAPI-PushNotifications-Example.PushNotificationServiceExtension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		7EAF2EB71D96E61200F322ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = PushNotificationServiceExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sweefties.iOS10-NewAPI-PushNotifications-Example.PushNotificationServiceExtension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -297,6 +625,22 @@
 			buildConfigurations = (
 				7EAF2E7E1D96B80F00F322ED /* Debug */,
 				7EAF2E7F1D96B80F00F322ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		7EAF2EA51D96E37900F322ED /* Build configuration list for PBXNativeTarget "PushNotificationContentExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7EAF2EA61D96E37900F322ED /* Debug */,
+				7EAF2EA71D96E37900F322ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		7EAF2EB51D96E61200F322ED /* Build configuration list for PBXNativeTarget "PushNotificationServiceExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7EAF2EB61D96E61200F322ED /* Debug */,
+				7EAF2EB71D96E61200F322ED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
